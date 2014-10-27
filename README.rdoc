@@ -19,7 +19,7 @@ Cú pháp:
 - stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
 Minh họa:
 
-![alt tag](../screenshots/hinh1.png)
+![ScreenShot](/screenshots/hinh1.png)
 
 1.2 Hình chữ nhật:
 
@@ -33,7 +33,7 @@ Cú pháp:
 - stroke: màu của đường viền
 Minh họa:
 
-![Image](./screenshots/hinh2.png)
+![Image](/screenshots/hinh2.png)
 
 1.3 Đường thẳng:
 
