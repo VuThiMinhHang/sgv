@@ -1,0 +1,45 @@
+==SVG(Scalable Vector Graphics)
+
+SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày càng phổ biến cùng với HTML5.
+
+*Cú pháp: HTML5 cho phép dung trực tiếp thẻ <sgv>
+<sgv>...</sgv>
+
+*Hình tròn:
+Cú pháp:
+<sgv>
+  <circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." />
+</svg>
+- r: bán kính hình tròn
+- cx: khoảng cách từ tâm đường tròn đến mép trái của thẻ <sgv>
+- cy: khoảng cách từ tâm đường tròn đến phía trên của thẻ <sgv>
+- fill: màu của hình tròn
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
+
+* Hình chữ nhật:
+<svg>
+  <rect width=".." height=".." fill=".." stroke=".." stroke-width="5..
+</svg>
+- width: chiều rộng
+- height: chiều cao
+- fill: màu của hình tròn
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền
+
+* Đường thẳng:
+<svg>
+  <line x1=".." y1=".." x2=".." y2=".." stroke=".." stroke-width=".." />
+</svg>
+- x1: điểm bắt đầu theo trục x
+- x2: điểm bắt đầu theo trục x
+- y1: điểm bắt đầu theo trục y
+- y2: điểm bắt đầu theo trục y
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền
+
+* Hình ellipse
+<svg>
+  <ellipse cx=".." cy=".." rx=".." ry=".." fill=".." stroke=".." stroke-width=".." />
+</svg>
+
