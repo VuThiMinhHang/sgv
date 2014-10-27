@@ -7,7 +7,8 @@ SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày c�
 
 1. Tạo hình ảnh(Shape)
 1.1 Hình tròn:
-* Cú pháp:
+
+Cú pháp:
 
   <sgv><circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." /></svg>
 - r: bán kính hình tròn
@@ -20,7 +21,8 @@ Minh họa:
 ![Image](../screenshots/hinh1.png)
 
 1.2 Hình chữ nhật:
-* Cú pháp:
+
+Cú pháp:
 
   <svg><rect width=".." height=".." fill=".." stroke=".." stroke-width="5..</svg>
 - width: chiều rộng
@@ -32,7 +34,9 @@ Minh họa:
 ![Image](./screenshots/hinh2.png)
 
 1.3 Đường thẳng:
-* Cú pháp:
+
+Cú pháp:
+
   <svg><line x1=".." y1=".." x2=".." y2=".." stroke=".." stroke-width=".." /></svg>
 - x1: điểm bắt đầu theo trục x
 - x2: điểm bắt đầu theo trục x
@@ -44,7 +48,9 @@ Minh họa:
 ![Image](./screenshots/hinh3.png)
 
 1.4 Hình ellipse
-* Cú pháp:
+
+Cú pháp:
+
   <svg><ellipse cx=".." cy=".." rx=".." ry=".." fill=".." stroke=".." stroke-width=".." /></svg>
 - cx: khoảng cách từ tâm đường tròn đến mép trái của thẻ <sgv>
 - cy: khoảng cách từ tâm đường tròn đến phía trên của thẻ <sgv>
@@ -57,7 +63,9 @@ Minh họa:
 ![Image](./screenshots/hinh4.png)
 
 1.5 Hình đa giác
-* Cú pháp:
+
+Cú pháp:
+
   <svg><polygon points="..,.. ..,.. ..,.." fill=".." stroke= ".." stroke-width=".." /></svg>
 - points: giá trị x và y của mỗi điểm. Một hình đa giác cần ít nhất 3 điểm hoặc nhiều hơn.
 - fill: màu của hình
@@ -68,7 +76,9 @@ Minh họa:
 
 
 1.6 Đường gấp khúc
-* Cú pháp:
+
+Cú pháp:
+
   <svg><polyline points="..,.. ..,.. ..,.." fill=".." stroke=".." stroke-width=".." /></svg>
 - points: giá trị x và y của mỗi điểm. Một hình đa giác cần ít nhất 3 điểm hoặc nhiều hơn.
 - fill: màu của hình
@@ -78,7 +88,9 @@ Minh họa:
 ![Image](./screenshots/hinh6.png)
 
 1.7 Văn bản
-* Cú pháp:
+
+Cú pháp:
+
   <svg><text x=".." y=".." fill=".." transform="..">Text</text></svg>
 - x, y: toạ độ của điểm đầu tiên của đoạn text
 - transform: kiểu xoay của đoạn text
