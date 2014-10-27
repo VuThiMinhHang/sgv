@@ -18,7 +18,7 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
 Minh họa:
-![Image](../screenshots/hinh1.png)
+![alt tag](../screenshots/hinh1.png)
 
 1.2 Hình chữ nhật:
 
