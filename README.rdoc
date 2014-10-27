@@ -1,28 +1,123 @@
-== README
+==SVG(Scalable Vector Graphics)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày càng phổ biến cùng với HTML5.
 
-Things you may want to cover:
+* Cú pháp: HTML5 cho phép dung trực tiếp thẻ <sgv>
+<sgv>...</sgv>
 
-* Ruby version
+1. Tạo hình ảnh(Shape)
+* Hình tròn:
+Cú pháp:
+<sgv>
+  <circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." />
+</svg>
+- r: bán kính hình tròn
+- cx: khoảng cách từ tâm đường tròn đến mép trái của thẻ <sgv>
+- cy: khoảng cách từ tâm đường tròn đến phía trên của thẻ <sgv>
+- fill: màu của hình tròn
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
 
-* System dependencies
+* Hình chữ nhật:
+<svg>
+  <rect width=".." height=".." fill=".." stroke=".." stroke-width="5..
+</svg>
+- width: chiều rộng
+- height: chiều cao
+- fill: màu của hình
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền
 
-* Configuration
+* Đường thẳng:
+<svg>
+  <line x1=".." y1=".." x2=".." y2=".." stroke=".." stroke-width=".." />
+</svg>
+- x1: điểm bắt đầu theo trục x
+- x2: điểm bắt đầu theo trục x
+- y1: điểm bắt đầu theo trục y
+- y2: điểm bắt đầu theo trục y
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền
 
-* Database creation
+* Hình ellipse
+<svg>
+  <ellipse cx=".." cy=".." rx=".." ry=".." fill=".." stroke=".." stroke-width=".." />
+</svg>
+- cx: khoảng cách từ tâm đường tròn đến mép trái của thẻ <sgv>
+- cy: khoảng cách từ tâm đường tròn đến phía trên của thẻ <sgv>
+- rx: bán kính chiều ngang
+- ry: bán kính chiều dọc
+- fill: màu của hình
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền
 
-* Database initialization
+* Hình đa giác
+<svg>
+  <polygon points="..,.. ..,.. ..,.." fill=".." stroke= ".." stroke-width=".." />
+</svg>
+- points: giá trị x và y của mỗi điểm. Một hình đa giác cần ít nhất 3 điểm hoặc nhiều hơn.
+- fill: màu của hình
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền
 
-* How to run the test suite
+* Đường gấp khúc
+<svg>
+  <polyline points="..,.. ..,.. ..,.." fill=".." stroke=".." stroke-width=".." />
+</svg>
+- points: giá trị x và y của mỗi điểm. Một hình đa giác cần ít nhất 3 điểm hoặc nhiều hơn.
+- fill: màu của hình
+- stroke-width: độ dày đường viền
+- stroke: màu của đường viền
 
-* Services (job queues, cache servers, search engines, etc.)
+* Văn bản
+<svg>
+  <text x=".." y=".." fill=".." transform="..">Text</text>
+</svg>
+- x, y: toạ độ của điểm đầu tiên của đoạn text
+- transform: kiểu xoay của đoạn text
 
-* Deployment instructions
+2. Bộ lọc(Filters)
+Filter(bộ lọc) là các thao tác đồ họa áp dụng lên một hình ảnh độ họa gốc có thểsửa đổi theo ý muốn.
+Một số bộ lọc của SGV: feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix,..
+* Cú pháp: 
+<svg>
+  <defs>
+    <filter id="ID">
+      <filter in=".." stdDeviation=".." />
+    </filter>
+  </defs>
+    <phần tử SVG filter="url(#ID)" />
+</svg>
 
-* ...
+3. Đổ màu(Gradients)
+SVG gradient cho phép đổ màu chuyển đổi màu sắc một cách liên tục, mịn từ màu này sang màu khác trên một phần từ SVG.
+Có 2 loại:
+* linearGradient: đổ màu từ trên xuống dưới, từ trái qua phải và ngược lại.
+Cú pháp:
+<svg>
+  <defs>
+    linearGradient id="ID" x1=".." y1=".." x2=".." y2="..">
+      <stop offset=".." stop-color=".." />
+      <stop offset=".." stop-color=".."/>
+    </linearGradient>
+  </defs>
+</svg>
+<phần tử SVG fill="url(#ID)" />
+Trong đó:
+- x1, x2, y1, y2: xác định bắt đầu và kết thúc vị trí của gradient
+- Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>
+* radialGradient: đổ màu từ trung tâm ra bên ngoài.
+Cú pháp:
+<defs>
+    <radialGradient id="ID" cx=".." cy=".." r=".." fx=".." fy="..">
+        <stop offset=".."   stop-color=".." />
+        <stop offset=".." stop-color=".."  />
+    </radialGradient>
+</defs>
+<phần tử SVG fill="url(#ID)" />
+Trong đó:
+- cx, cy, r xác định đường tròn ngoài cùng
+- fx, fy xác định đường tròn trong cùng 
+- Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>. 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
