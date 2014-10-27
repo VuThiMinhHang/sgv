@@ -8,6 +8,7 @@ SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày c�
 1. Tạo hình ảnh(Shape)
 1.1 Hình tròn:
 * Cú pháp:
+
   <sgv><circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." /></svg>
 - r: bán kính hình tròn
 - cx: khoảng cách từ tâm đường tròn đến mép trái của thẻ <sgv>
@@ -20,6 +21,7 @@ Minh họa:
 
 1.2 Hình chữ nhật:
 * Cú pháp:
+
   <svg><rect width=".." height=".." fill=".." stroke=".." stroke-width="5..</svg>
 - width: chiều rộng
 - height: chiều cao
