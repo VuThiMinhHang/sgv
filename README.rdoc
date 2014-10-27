@@ -19,7 +19,7 @@ Cú pháp:
 - stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
 Minh họa:
 
-![ScreenShot](https://raw.github.com/VuThiMinhHang/sgv/master/screenshots/hinh1.png)
+![All text](https://raw.github.com/VuThiMinhHang/sgv/master/screenshots/hinh1.png)
 
 ![ScreenShot](/screenshots/hinh1.png)
 
