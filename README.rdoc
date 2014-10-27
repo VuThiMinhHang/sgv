@@ -19,7 +19,7 @@ Minh họa:
 ![Image](./screenshots/hinh1.png)
 
 1.2 Hình chữ nhật:
-Cú pháp:
+<tt>Cú pháp:</tt>
   <svg><rect width=".." height=".." fill=".." stroke=".." stroke-width="5..</svg>
 - width: chiều rộng
 - height: chiều cao
