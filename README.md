@@ -48,6 +48,14 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 
+Ví dụ:
+
+```html
+<svg width="400" height="120">
+  <rect width="300" height="100" fill="green" stroke="black" stroke-width="10" />
+</svg>
+```
+
 Minh họa:
 
 ![Image](./screenshots/hinh2.png)
@@ -66,9 +74,17 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 
+Ví dụ:
+
+```html
+<svg height="60" width="350">
+  <line x1="5" y1="5" x2="300" y2="50" stroke="blue" stroke-width="8" />
+</svg>
+```
+
 Minh họa:
 
-![](./screenshots/hinh3.png)
+![Image](./screenshots/hinh3.png)
 
 1.4 Hình ellipse
 
@@ -86,6 +102,14 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 
+Ví dụ:
+
+```html
+<svg height="150" width="350">
+  <ellipse cx="200" cy="80" rx="100" ry="50" fill="pink" stroke="purple" stroke-width="10" />
+</svg>
+```
+
 Minh họa:
 
 ![Image](./screenshots/hinh4.png)
@@ -102,6 +126,15 @@ Cú pháp:
 - fill: màu của hình
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
+
+Ví dụ:
+
+```html
+<svg height="260" width="500">
+  <polygon points="220,10 300,210 170,250 123,234" fill="lime" stroke= "purple"  stroke-width="5" />
+</svg>
+```
+
 Minh họa:
 
 ![Image](./screenshots/hinh5.png)
@@ -119,6 +152,14 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 
+Ví dụ:
+
+```html
+<svg height="180" width="500">
+  <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="pink" stroke="red" stroke-width="4" />
+</svg>
+```
+
 Minh họa:
 
 ![Image](./screenshots/hinh6.png)
@@ -132,6 +173,14 @@ Cú pháp:
 
 - x, y: toạ độ của điểm đầu tiên của đoạn text
 - transform: kiểu xoay của đoạn text
+
+Ví dụ:
+
+```html
+<svg height="100" width="200">
+  <text x="0" y="20" fill="red" transform="rotate(30 20,40)">Vu Thi Minh Hang</text>
+</svg>
+```
 
 Minh họa:
 
@@ -152,13 +201,37 @@ Một số bộ lọc của SGV: feBlend, feColorMatrix, feComponentTransfer, fe
   </svg>
 ```
 
-Minh họa:
+Ví dụ: feGaussianBlur
 
-feGaussianBlur:
+```html
+<svg height="110" width="300">
+  <defs>
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+  <rect width="300" height="100" stroke="black" stroke-width="3" fill="pink" filter="url(#blur)" />
+</svg>
+```
+Minh họa:
 
 ![Image](./screenshots/hinh8.png)
 
-feOffset, feBlend:
+Ví dụ: feOffset, feBlend
+
+```html
+<svg height="120" width="200">
+  <defs>
+    <filter id="blend" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="25" dy="25" />
+      <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+    </filter>
+  </defs>
+  <rect width="120" height="90" stroke="red" stroke-width="5" fill="blue" filter="url(#blend)" />
+</svg>
+```
+
+Minh họa:
 
 ![Image](./screenshots/hinh9.png)
 
@@ -185,6 +258,20 @@ Trong đó:
 - x1, x2, y1, y2: xác định bắt đầu và kết thúc vị trí của gradient
 - Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>
 
+Ví dụ:
+
+```html
+<svg height="150" width="400">
+  <defs>
+    <linearGradient id="linear_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="blue" stop-opacity="1" />
+      <stop offset="100%" stop-color="green" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+  <polygon points="220,10 300,210 170,250 123,234" fill="url(#linear_gradient)" />
+</svg>
+```
+
 Minh họa:
 
 ![Image](./screenshots/hinh10.png)
@@ -207,6 +294,20 @@ Trong đó:
 - cx, cy, r xác định đường tròn ngoài cùng
 - fx, fy xác định đường tròn trong cùng
 - Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>.
+
+Ví dụ:
+
+```html
+<svg height="150" width="500">
+  <defs>
+    <radialGradient id="radial_gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="pink" stop-opacity="0" />
+      <stop offset="100%" stop-color="violet" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#radial_gradient)" />
+</svg>
+```
 
 Minh họa:
 
