@@ -6,6 +6,7 @@ SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày c�
 <sgv>...</sgv>
 
 1. Tạo hình ảnh(Shape)
+
 1.1 Hình tròn:
 
 Cú pháp:
