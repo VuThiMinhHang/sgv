@@ -64,6 +64,7 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 Minh họa:
+
 ![Image](./screenshots/hinh4.png)
 
 1.5 Hình đa giác
