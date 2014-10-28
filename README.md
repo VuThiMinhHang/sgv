@@ -19,6 +19,8 @@ Cú pháp:
 - stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
 Minh họa:
 
+![Picture](https://raw.github.com/VuThiMinhHang/sgv/master/screenshots/hinh1.png)
+
 ![ScreenShot](/screenshots/hinh1.png)
 
 1.2 Hình chữ nhật:
@@ -33,7 +35,7 @@ Cú pháp:
 - stroke: màu của đường viền
 Minh họa:
 
-![Image](/screenshots/hinh2.png)
+![sgv](./screenshots/hinh2.png)
 
 1.3 Đường thẳng:
 
@@ -47,7 +49,8 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 Minh họa:
-![Image](./screenshots/hinh3.png)
+
+![](./screenshots/hinh3.png)
 
 1.4 Hình ellipse
 
@@ -62,6 +65,7 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 Minh họa:
+
 ![Image](./screenshots/hinh4.png)
 
 1.5 Hình đa giác
