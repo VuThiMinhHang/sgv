@@ -49,7 +49,8 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 Minh họa:
-![Image](./screenshots/hinh3.png)
+
+![](./screenshots/hinh3.png)
 
 1.4 Hình ellipse
 
