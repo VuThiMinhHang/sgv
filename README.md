@@ -19,15 +19,13 @@ Cú pháp:
 - stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
 Minh họa:
 
-![Picture](https://raw.github.com/VuThiMinhHang/sgv/master/screenshots/hinh1.png)
-
-![ScreenShot](/screenshots/hinh1.png)
+![Image](/screenshots/hinh1.png)
 
 1.2 Hình chữ nhật:
 
 Cú pháp:
 
-  <svg><rect width=".." height=".." fill=".." stroke=".." stroke-width="5..</svg>
+  <svg><rect width=".." height=".." fill=".." stroke=".." stroke-width=".." /></svg>
 - width: chiều rộng
 - height: chiều cao
 - fill: màu của hình
@@ -35,7 +33,7 @@ Cú pháp:
 - stroke: màu của đường viền
 Minh họa:
 
-![sgv](./screenshots/hinh2.png)
+![Image](./screenshots/hinh2.png)
 
 1.3 Đường thẳng:
 
@@ -78,8 +76,8 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 Minh họa:
-![Image](./screenshots/hinh5.png)
 
+![Image](./screenshots/hinh5.png)
 
 1.6 Đường gấp khúc
 
@@ -91,6 +89,7 @@ Cú pháp:
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
 Minh họa:
+
 ![Image](./screenshots/hinh6.png)
 
 1.7 Văn bản
@@ -116,9 +115,13 @@ Một số bộ lọc của SGV: feBlend, feColorMatrix, feComponentTransfer, fe
       <phần tử SVG filter="url(#ID)" />
   </svg>
 Minh họa:
+
 feGaussianBlur:
+
 ![Image](./screenshots/hinh8.png)
+
 feOffset, feBlend:
+
 ![Image](./screenshots/hinh9.png)
 
 3. Đổ màu(Gradients)
@@ -140,6 +143,7 @@ Trong đó:
 - x1, x2, y1, y2: xác định bắt đầu và kết thúc vị trí của gradient
 - Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>
 Minh họa:
+
 ![Image](./screenshots/hinh10.png)
 
 3.2 radialGradient: đổ màu từ trung tâm ra bên ngoài.
@@ -158,4 +162,5 @@ Trong đó:
 - fx, fy xác định đường tròn trong cùng
 - Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>.
 Minh họa:
+
 ![Image](./screenshots/hinh11.png)
