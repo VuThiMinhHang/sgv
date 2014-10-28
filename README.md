@@ -3,7 +3,7 @@
 SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày càng phổ biến cùng với HTML5.
 
 * Cú pháp: HTML5 cho phép dung trực tiếp thẻ <sgv>
-<sgv>...</sgv>
+<tt><sgv>...</sgv></tt>
 
 1. Tạo hình ảnh(Shape)
 
@@ -11,7 +11,7 @@ SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày c�
 
 Cú pháp:
 
-  <sgv><circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." /></svg>
+  <tt><sgv><circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." /></svg></tt>
 - r: bán kính hình tròn
 - cx: khoảng cách từ tâm đường tròn đến mép trái của thẻ <sgv>
 - cy: khoảng cách từ tâm đường tròn đến phía trên của thẻ <sgv>
@@ -21,9 +21,9 @@ Cú pháp:
 
 Ví dụ:
 
-<svg width="200" height="150">
+<tt><svg width="200" height="150">
   <circle cx="100" cy="75" r="70" stroke="red" stroke-width="10" fill="yellow" />
-</svg>
+</svg></tt>
 
 Minh họa:
 
