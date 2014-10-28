@@ -11,7 +11,9 @@ SGV là một ngôn ngữ dùng để mô tả đồ họa 2D và đang ngày c�
 
 Cú pháp:
 
-  <tt><sgv><circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." /></svg></tt>
+  ```html
+  <sgv><circle cx=".." cy="value" r=".." stroke=".." stroke-width=".." fill=".." /></svg>
+  ```
 - r: bán kính hình tròn
 - cx: khoảng cách từ tâm đường tròn đến mép trái của thẻ <sgv>
 - cy: khoảng cách từ tâm đường tròn đến phía trên của thẻ <sgv>
