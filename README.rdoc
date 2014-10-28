@@ -35,7 +35,7 @@ Cú pháp:
 - stroke: màu của đường viền
 Minh họa:
 
-![Image](/screenshots/hinh2.png)
+![sgv](./screenshots/hinh2.png)
 
 1.3 Đường thẳng:
 
