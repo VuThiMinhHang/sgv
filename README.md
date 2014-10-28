@@ -31,6 +31,7 @@ Cú pháp:
 - fill: màu của hình
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
+
 Minh họa:
 
 ![Image](./screenshots/hinh2.png)
@@ -46,6 +47,7 @@ Cú pháp:
 - y2: điểm bắt đầu theo trục y
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
+
 Minh họa:
 
 ![](./screenshots/hinh3.png)
@@ -62,6 +64,7 @@ Cú pháp:
 - fill: màu của hình
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
+
 Minh họa:
 
 ![Image](./screenshots/hinh4.png)
@@ -88,6 +91,7 @@ Cú pháp:
 - fill: màu của hình
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền
+
 Minh họa:
 
 ![Image](./screenshots/hinh6.png)
@@ -99,6 +103,7 @@ Cú pháp:
   <svg><text x=".." y=".." fill=".." transform="..">Text</text></svg>
 - x, y: toạ độ của điểm đầu tiên của đoạn text
 - transform: kiểu xoay của đoạn text
+
 Minh họa:
 ![Image](./screenshots/hinh7.png)
 
@@ -128,7 +133,9 @@ feOffset, feBlend:
 SVG gradient cho phép đổ màu chuyển đổi màu sắc một cách liên tục, mịn từ màu này sang màu khác trên một phần từ SVG.
 
 Có 2 loại:
+
 3.1 linearGradient: đổ màu từ trên xuống dưới, từ trái qua phải và ngược lại.
+
 Cú pháp:
   <svg>
     <defs>
@@ -142,11 +149,13 @@ Cú pháp:
 Trong đó:
 - x1, x2, y1, y2: xác định bắt đầu và kết thúc vị trí của gradient
 - Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>
+
 Minh họa:
 
 ![Image](./screenshots/hinh10.png)
 
 3.2 radialGradient: đổ màu từ trung tâm ra bên ngoài.
+
 Cú pháp:
   <svg>
     <defs>
@@ -161,6 +170,7 @@ Trong đó:
 - cx, cy, r xác định đường tròn ngoài cùng
 - fx, fy xác định đường tròn trong cùng
 - Phạm vi màu cho một gradient có thể được bao gồm hai hoặc nhiều màu sắc. Mỗi màu sắc được quy định với một thẻ <stop>.
+
 Minh họa:
 
 ![Image](./screenshots/hinh11.png)
