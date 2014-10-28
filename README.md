@@ -18,6 +18,13 @@ Cú pháp:
 - fill: màu của hình tròn
 - stroke-width: độ dày đường viền
 - stroke: màu của đường viền( nếu không có, hình tròn sẽ không có đường viền)
+
+Ví dụ:
+
+<svg width="200" height="150">
+  <circle cx="100" cy="75" r="70" stroke="red" stroke-width="10" fill="yellow" />
+</svg>
+
 Minh họa:
 
 ![Image](/screenshots/hinh1.png)
